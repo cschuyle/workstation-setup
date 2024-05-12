@@ -25,19 +25,25 @@ if (( SKIP_ANALYTICS == 0 )); then
 else
     export HOMEBREW_NO_ANALYTICS=1
 fi
+if [[ ! -z "$@" ]]; then
+    echo "-------------------------------------------------------------"
+    echo "WARNING: Not doing base setup because parameters were passed."
+    echo "To perform base setup, call this script with no parameters."
+    echo "-------------------------------------------------------------"
+else
+    # Note: Homebrew needs to be set up first
+    source ${MY_DIR}/scripts/common/homebrew.sh
 
-# Note: Homebrew needs to be set up first
-source ${MY_DIR}/scripts/common/homebrew.sh
-
-# Install everything else
-source ${MY_DIR}/scripts/common/oh-my-zsh.sh
-source ${MY_DIR}/scripts/common/editors.sh
-source ${MY_DIR}/scripts/common/git.sh
-source ${MY_DIR}/scripts/common/git-aliases.sh
-source ${MY_DIR}/scripts/common/applications-common.sh
-source ${MY_DIR}/scripts/common/developer-utilities.sh
-source ${MY_DIR}/scripts/common/unix.sh
-source ${MY_DIR}/scripts/common/configuration-osx.sh
+    # Install everything else
+    source ${MY_DIR}/scripts/common/oh-my-zsh.sh
+    source ${MY_DIR}/scripts/common/editors.sh
+    source ${MY_DIR}/scripts/common/git.sh
+    source ${MY_DIR}/scripts/common/git-aliases.sh
+    source ${MY_DIR}/scripts/common/applications-common.sh
+    source ${MY_DIR}/scripts/common/developer-utilities.sh
+    source ${MY_DIR}/scripts/common/unix.sh
+    source ${MY_DIR}/scripts/common/configuration-osx.sh
+fi
 
 # For each command line argument, try executing the corresponding script in opt-in/
 for var in "$@"
