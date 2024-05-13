@@ -81,3 +81,6 @@ brew install yarn
 brew install zlib
 brew install zq
 brew install zsh
+
+git config --global user.name "Carlton Schuyler"
+git config --global user.email carl@dragnon.com
