@@ -82,5 +82,14 @@ brew install zlib
 brew install zq
 brew install zsh
 
+# SDKMAN for Java
+curl -s "https://get.sdkman.io" | bash
+# TODO This will change frequently - is there a "most recent" option or the Java managed by SDKMAN?
+sdk install java graalce
+
+
+# Everyone's fav git config
 git config --global user.name "Carlton Schuyler"
 git config --global user.email carl@dragnon.com
+git config --global branch.autoSetupRebase always
+git config --global pull.rebase true
