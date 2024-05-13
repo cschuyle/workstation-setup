@@ -3,8 +3,10 @@
 echo
 echo "Installing Carlton's stuff"
 
+brew install --cask 1password
 brew install --cask brave-browser
 brew install --cask divvy
+brew install --cask nordvpn
 brew install --cask omnidb
 brew install --cask roam-research
 brew install --cask vlc
