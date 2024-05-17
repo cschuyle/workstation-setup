@@ -89,7 +89,7 @@ brew install awscli
 # SDKMAN for Java
 curl -s "https://get.sdkman.io" | bash
 # TODO This will change frequently - is there a "most recent" option or the Java managed by SDKMAN?
-sdk install java graalce
+sdk install java 21.0.2-open
 
 
 # Everyone's fav git config
