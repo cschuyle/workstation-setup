@@ -97,3 +97,12 @@ git config --global user.name "Carlton Schuyler"
 git config --global user.email carl@dragnon.com
 git config --global branch.autoSetupRebase always
 git config --global pull.rebase true
+
+# Chrome (Brave, Arc...) Extensions
+
+- Save to Pocket
+- Roam Highlighter
+- 1Password
+- Pinput for Pinboard
+    - "Private" as default
+- JSON Formatter
