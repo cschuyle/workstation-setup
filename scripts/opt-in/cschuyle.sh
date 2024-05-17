@@ -4,11 +4,14 @@ echo
 echo "Installing Carlton's stuff"
 
 brew install --cask 1password
+brew install --cask arc
 brew install --cask brave-browser
+brew install --cask discord
 brew install --cask divvy
 brew install --cask nordvpn
 brew install --cask omnidb
 brew install --cask roam-research
+brew install --cask spotify
 brew install --cask vlc
 # brew install --cask vscodium
 # brew install amz
@@ -22,7 +25,6 @@ brew install coreutils
 brew install cpanm
 brew install csvkit
 brew install curl
-# brew install dg
 brew install direnv
 brew install findutils # gfind etc
 # brew install firebase
@@ -81,6 +83,8 @@ brew install yarn
 brew install zlib
 brew install zq
 brew install zsh
+brew install awscli
+
 
 # SDKMAN for Java
 curl -s "https://get.sdkman.io" | bash
