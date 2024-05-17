@@ -16,6 +16,7 @@ brew install --cask vlc
 # brew install --cask vscodium
 # brew install amz
 brew install automake
+brew install awscli
 brew install bcrypt
 brew install brimdata/tap/zq
 brew install clojure
@@ -76,6 +77,7 @@ brew install vlc
 brew install vmware-tanzu-learning/tap/penguinctl
 brew install watch 
 brew install WebPQuickLook
+brew install weechat
 brew install wget
 brew install xmlstarlet
 brew install xz
@@ -83,7 +85,6 @@ brew install yarn
 brew install zlib
 brew install zq
 brew install zsh
-brew install awscli
 
 
 # SDKMAN for Java
@@ -98,7 +99,11 @@ git config --global user.email carl@dragnon.com
 git config --global branch.autoSetupRebase always
 git config --global pull.rebase true
 
-# Chrome (Brave, Arc...) Extensions
+echo <<EOF
+##################################################
+
+Chrome (Brave, Arc...) Extensions 
+Install into your browser fromt he Chrome App Store
 
 - Save to Pocket
 - Roam Highlighter
@@ -106,3 +111,6 @@ git config --global pull.rebase true
 - Pinput for Pinboard
     - "Private" as default
 - JSON Formatter
+
+##################################################
+EOF
