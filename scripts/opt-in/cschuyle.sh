@@ -102,8 +102,8 @@ git config --global pull.rebase true
 echo <<EOF
 ##################################################
 
-Chrome (Brave, Arc...) Extensions 
-Install into your browser fromt he Chrome App Store
+Chrome (Brave, Arc...) Extensions: 
+(Install into your browser from the Chrome App Store)
 
 - Save to Pocket
 - Roam Highlighter
@@ -111,6 +111,12 @@ Install into your browser fromt he Chrome App Store
 - Pinput for Pinboard
     - "Private" as default
 - JSON Formatter
+
+Manual configurations:
+
+- Brave
+    - System / Show warning before quitting with ⌘Q
+    - Use vertical tabs (right click on tabs to set this)
 
 ##################################################
 EOF
