@@ -121,5 +121,10 @@ Manual configurations:
 - System Settings / Handle DVDs and CDs
     - Ignore when insert
 
+- Add direnv to plugins in .zshrc:
+
+  ```
+  plugins=(git sdk direnv)
+  ```
 ##################################################
 EOF
