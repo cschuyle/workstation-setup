@@ -35,7 +35,7 @@ brew tap gdubw/gng && brew install gng
 brew install gnu-sed # gsed
 brew install gnu-tar # gtar
 brew install gradle
-brew install handbrake
+brew install homebrew/cask/handbrake
 brew tap heroku/brew && brew install heroku
 brew install homebrew/cask/emacs
 brew install httpie
@@ -117,6 +117,9 @@ Manual configurations:
 - Brave
     - System / Show warning before quitting with ⌘Q
     - Use vertical tabs (right click on tabs to set this)
+
+- System Settings / Handle DVDs and CDs
+    - Ignore when insert
 
 ##################################################
 EOF
