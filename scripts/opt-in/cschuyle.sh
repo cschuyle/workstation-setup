@@ -110,7 +110,7 @@ Chrome (Brave, Arc...) Extensions:
 - 1Password
 - Pinput for Pinboard
     - "Private" as default
-- JSON Formatter
+- JSON Formatter (callumlocke.com)
 
 Manual configurations:
 
@@ -118,13 +118,17 @@ Manual configurations:
     - System / Show warning before quitting with ⌘Q
     - Use vertical tabs (right click on tabs to set this)
 
-- System Settings / Handle DVDs and CDs
+- System Settings 
+  - Handle DVDs and CDs
     - Ignore when insert
+  - Keyboard Shortcuts / Services/ Text / Search Man Page nedfx in Terminal - DEACTIVATE
 
 - Add direnv to plugins in .zshrc:
 
   ```
   plugins=(git sdk direnv)
   ```
+
+
 ##################################################
 EOF
