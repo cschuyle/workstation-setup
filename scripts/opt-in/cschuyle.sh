@@ -122,7 +122,9 @@ Manual configurations:
   - Handle DVDs and CDs
     - Ignore when insert
   - Keyboard Shortcuts / Services/ Text / Search Man Page nedfx in Terminal - DEACTIVATE
-
+  - Login Items
+    - Divvy
+    - Flycut
 - Add direnv to plugins in .zshrc:
 
   ```
