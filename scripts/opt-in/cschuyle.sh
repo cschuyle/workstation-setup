@@ -102,21 +102,29 @@ git config --global pull.rebase true
 echo <<EOF
 ##################################################
 
-Chrome (Brave, Arc...) Extensions: 
-(Install into your browser from the Chrome App Store)
-
-- Save to Pocket
-- Roam Highlighter
-- 1Password
-- Pinput for Pinboard
-    - "Private" as default
-- JSON Formatter (callumlocke.com)
-
 Manual configurations:
 
-- Brave
+- Chromium-based browser (Arc, Brave, Chrome ...)
     - System / Show warning before quitting with ⌘Q
-    - Use vertical tabs (right click on tabs to set this)
+    - (for Brave) Use vertical tabs (right click on tabs to set this)
+    
+    - Make Google standard search default (from https://tenbluelinks.org/):
+      - Open "Settings -> Search engine -> Manage search engines" or copy-paste this in your address bar: chrome://settings/searchEngines 
+      - Next to the "Site search" section click on "Add" button.
+      - Fill the details in the dialog window:
+        - Search engine: Google Web 
+        - Shortcut: @web 
+        - URL: {google:baseURL}search?q=%s&udm=14 
+      - The last line is very important.
+      - You will see your new search engine "Google Web" in the list. Click on the menu icon next to it and then on "Make default".
+    
+    - Extensions (Install into your browser from the Chrome App Store):
+      - Save to Pocket
+      - Roam Highlighter
+      - 1Password
+      - Pinboard Plus (or Pinput, but it doesn't work in Arc)
+          - "Private" as default
+      - JSON Formatter (callumlocke.com)
 
 - System Settings 
   - Handle DVDs and CDs
@@ -125,7 +133,8 @@ Manual configurations:
   - Login Items
     - Divvy
     - Flycut
-- Add direnv to plugins in .zshrc:
+
+- Add the required stuff to plugins in .zshrc:
 
   ```
   plugins=(git sdk direnv)
