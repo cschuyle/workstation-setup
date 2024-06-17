@@ -119,20 +119,32 @@ Manual configurations:
       - You will see your new search engine "Google Web" in the list. Click on the menu icon next to it and then on "Make default".
     
     - Extensions (Install into your browser from the Chrome App Store):
+      - JSON Formatter (callumlocke.com)
+      [Pin to Toolbar] the following:
       - Save to Pocket
       - Roam Highlighter
-      - 1Password
+      - 1Password 
+          - also make available in incognito
       - Pinboard Plus (or Pinput, but it doesn't work in Arc)
           - "Private" as default
-      - JSON Formatter (callumlocke.com)
 
 - System Settings 
   - Handle DVDs and CDs
     - Ignore when insert
-  - Keyboard Shortcuts / Services/ Text / Search Man Page nedfx in Terminal - DEACTIVATE
+  - Keyboard Shortcuts / Services / Text / Search Man Page index in Terminal - DEACTIVATE
+  - Keyboard speed max
   - Login Items
     - Divvy
+      - Make shortcuts
     - Flycut
+
+- Finder Settings
+  - New Finder Windows show ... my home directory
+  - Sidebar - add Pictures and my home directory
+  - Advanced / Show all filename extensions
+
+- VS Code Settings
+  - Auto save on focus change
 
 - Add the required stuff to plugins in .zshrc:
 
