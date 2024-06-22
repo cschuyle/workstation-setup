@@ -102,6 +102,11 @@ git config --global pull.rebase true
 echo <<EOF
 ##################################################
 
+Manual installs:
+
+- Amphetamine
+- Check if Spotify brew cash is up to date with Spotify app
+
 Manual configurations:
 
 - Chromium-based browser (Arc, Brave, Chrome ...)
