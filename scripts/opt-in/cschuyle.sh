@@ -142,6 +142,8 @@ Manual configurations:
     - Divvy
       - Make shortcuts
     - Flycut
+    - Amphetamine
+    - NordVPN
 
 - Finder Settings
   - New Finder Windows show ... my home directory
