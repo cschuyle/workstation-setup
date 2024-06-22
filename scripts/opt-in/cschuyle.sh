@@ -89,6 +89,8 @@ brew install zsh
 
 # SDKMAN for Java
 curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+
 # TODO This will change frequently - is there a "most recent" option or the Java managed by SDKMAN?
 sdk install java 21.0.2-open
 
@@ -102,24 +104,49 @@ git config --global pull.rebase true
 echo <<EOF
 ##################################################
 
-Manual installs:
+Manual actions:
 
-- Amphetamine
+- Install dev tools. If you didn't already during the chicken-and-egg phase, try to run git, 
+  and watch it tell you you need to install dev tools.
+
+- git hack to work around errors like `error ...zeroPaddedFilemode: contains zero-padded file modes`
+  - From https://github.com/scikit-learn/scikit-learn/issues/19979
+  ```
+  git config --global fsck.zeroPaddedFilemode ignore
+  git config --global fetch.fsckobjects false
+  git config --global receive.fsckobjects false
+  ```
+
+- Install Oh-My-Zsh
+  - Clone https://github.com/cschuyle/ohmyzsh and move it to ~/.oh-my-zsh
+  - `git remote add upstream https://github.com/ohmyzsh/ohmyzsh.git`
+  - Add the required stuff to plugins in .zshrc:
+  ```
+  plugins=(git sdk direnv)
+  ```
+
+- From this repo (workstation-setup), copy cschuyle.zshrc to ~/.zshrc
+
+- Install Amphetamine from Apple App Store
+
 - Check if Spotify brew cash is up to date with Spotify app
 
 Manual configurations:
 
-- Chromium-based browser (Arc, Brave, Chrome ...)
+- System Setting / Default Search Engine
+  - Arc (or whatever you want)
+
+- Chromium-based browser (Arc, Brave, Chrome, Edge ...)
     - System / Show warning before quitting with ⌘Q
     - (for Brave) Use vertical tabs (right click on tabs to set this)
     
-    - Make Google standard search default (from https://tenbluelinks.org/):
+    - Make Google "classic" (just the links please) the standard search default (from https://tenbluelinks.org/):
       - Open "Settings -> Search engine -> Manage search engines" or copy-paste this in your address bar: chrome://settings/searchEngines 
       - Next to the "Site search" section click on "Add" button.
       - Fill the details in the dialog window:
-        - Search engine: Google Web 
+        - Search engine: Google Classic 
         - Shortcut: @web 
-        - URL: {google:baseURL}search?q=%s&udm=14 
+        - URL: {google:baseURL}search?q=%s&udm=20
       - The last line is very important.
       - You will see your new search engine "Google Web" in the list. Click on the menu icon next to it and then on "Make default".
     
@@ -132,33 +159,48 @@ Manual configurations:
           - also make available in incognito
       - Pinboard Plus (or Pinput, but it doesn't work in Arc)
           - "Private" as default
+          - Set API token (https://pinboard.in / password / API Token)
 
 - System Settings 
-  - Handle DVDs and CDs
-    - Ignore when insert
-  - Keyboard Shortcuts / Services / Text / Search Man Page index in Terminal - DEACTIVATE
   - Keyboard speed max
+  - Handle DVDs and CDs
+    - Ignore when insert DVD
+  - Keyboard Shortcuts / Services / Text / Search Man Page index in Terminal 
+    - DEACTIVATE
   - Login Items
     - Divvy
       - Make shortcuts
     - Flycut
     - Amphetamine
     - NordVPN
+  - Privacy & Security / Accessibility
+    - Flycut
+    - Divvy
 
 - Finder Settings
-  - New Finder Windows show ... my home directory
-  - Sidebar - add Pictures and my home directory
+  - New Finder Windows show ... 
+    - My home directory
+  - Sidebar 
+    - Add:
+      - Pictures
+      - My home directory
+    - Remove Recents
   - Advanced / Show all filename extensions
 
 - VS Code Settings
   - Auto save on focus change
 
-- Add the required stuff to plugins in .zshrc:
-
-  ```
-  plugins=(git sdk direnv)
-  ```
-
+- iTerm settings
+  - Appearance / Windows
+    - Heavy borders around windows in light mode
+  - Profiles / Default
+    - Colors / Foreground / hex color 00ee42
+    - Text - Downsize font size to 15
+    - Windows
+      - Dimensions: 111 x 55
+      - Transparency: 11%
+    - Terminal
+      - Scrollback lines: 100,000
 
 ##################################################
 EOF
