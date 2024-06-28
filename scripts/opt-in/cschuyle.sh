@@ -7,7 +7,8 @@ brew install --cask 1password
 brew install --cask arc
 brew install --cask brave-browser
 brew install --cask discord
-brew install --cask divvy
+# Divvy chjarges $. Using Rectangle.
+# brew install --cask divvy
 brew install --cask nordvpn
 brew install --cask omnidb
 brew install --cask roam-research
@@ -168,14 +169,14 @@ Manual configurations:
   - Keyboard Shortcuts / Services / Text / Search Man Page index in Terminal 
     - DEACTIVATE
   - Login Items
-    - Divvy
+    - Rectangle
       - Make shortcuts
     - Flycut
     - Amphetamine
     - NordVPN
   - Privacy & Security / Accessibility
     - Flycut
-    - Divvy
+    - Rectangle
 
 - Finder Settings
   - New Finder Windows show ... 

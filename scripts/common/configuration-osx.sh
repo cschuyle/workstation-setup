@@ -38,8 +38,8 @@ echo "Configuring iTerm"
 cp files/com.googlecode.iterm2.plist ~/Library/Preferences
 
 echo "Configuring Rectangle"
-#cp files/com.knollsoft.Rectangle.plist ~/Library/Preferences/com.knollsoft.Rectangle.plist
-#open /Applications/Rectangle.app
+cp files/com.knollsoft.Rectangle.plist ~/Library/Preferences/com.knollsoft.Rectangle.plist
+open /Applications/Rectangle.app
 
 echo "Configuring FlyCut"
 open /Applications/Flycut.app

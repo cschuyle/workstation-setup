@@ -8,8 +8,7 @@ echo "Installing applications"
 # Utilities
 
 brew install --cask flycut
-# I prefer Divvy
-# brew install --cask rectangle
+brew install --cask rectangle
 
 # Terminals
 brew install --cask iterm2
