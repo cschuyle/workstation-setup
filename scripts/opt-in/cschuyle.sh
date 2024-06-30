@@ -128,14 +128,13 @@ Manual actions:
 
 - From this repo (workstation-setup), copy cschuyle.zshrc to ~/.zshrc
 
-- Install Amphetamine from Apple App Store
+- App Store
+  - Amphetamine
+  - 1Password for Safari
 
 - Check if Spotify brew cash is up to date with Spotify app
 
 Manual configurations:
-
-- System Setting / Default Search Engine
-  - Arc (or whatever you want)
 
 - Chromium-based browser (Arc, Brave, Chrome, Edge ...)
     - System / Show warning before quitting with ⌘Q
@@ -177,6 +176,8 @@ Manual configurations:
   - Privacy & Security / Accessibility
     - Flycut
     - Rectangle
+  - Default Search Engine
+    - Arc (or whatever you want)
 
 - Finder Settings
   - New Finder Windows show ... 
