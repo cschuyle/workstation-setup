@@ -165,6 +165,8 @@ Manual configurations:
   - Keyboard speed max
   - Handle DVDs and CDs
     - Ignore when insert DVD
+    - Show eject in menu bar
+    
   - Keyboard Shortcuts / Services / Text / Search Man Page index in Terminal 
     - DEACTIVATE
   - Login Items
