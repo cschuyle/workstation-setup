@@ -206,11 +206,18 @@ Manual configurations:
     - Terminal
       - Scrollback lines: 100,000
 
-- Add the required stuff to plugins in .zshrc:
+- Zoom
+  - Mute when join
+  - Video off when join
 
-  ```
-  plugins=(git sdk direnv)
-  ```
+- Slack
+  - Hummus
+
+- Review cschuyle.zshrc and copy to .zshrc.
+  - Make sure the required stuff to plugins in .zshrc:
+    ```
+    plugins=(git sdk direnv)
+    ```
 
 - Synology Assistant
   - Go to Synology Downloads, select NAS versiopn and then Desktop Utilities.
