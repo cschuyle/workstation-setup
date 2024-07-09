@@ -204,5 +204,15 @@ Manual configurations:
     - Terminal
       - Scrollback lines: 100,000
 
+- Add the required stuff to plugins in .zshrc:
+
+  ```
+  plugins=(git sdk direnv)
+  ```
+
+- Synology Assistant
+  - Go to Synology Downloads, select NAS versiopn and then Desktop Utilities.
+    - Latest version for my current NAS: https://www.synology.com/en-us/support/download/DS1019+?version=7.2#utilities
+
 ##################################################
 EOF
