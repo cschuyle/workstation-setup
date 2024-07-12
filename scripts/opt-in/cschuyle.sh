@@ -161,6 +161,8 @@ Manual configurations:
           - "Private" as default
           - Set API token (https://pinboard.in / password / API Token)
 
+  - Arc: Settings / Links / Open Little Arc when I press atl-cmd-N in any app - DISABLE
+  
 - System Settings 
   - Keyboard speed max
   - Handle DVDs and CDs
