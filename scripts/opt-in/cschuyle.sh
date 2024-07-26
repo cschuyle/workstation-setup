@@ -87,6 +87,9 @@ brew install zlib
 brew install zq
 brew install zsh
 
+# OOOOH this looks nifty - Amber, it compiles to bash!
+curl -s "https://raw.githubusercontent.com/Ph0enixKM/AmberNative/master/setup/install.sh" | bash
+
 
 # SDKMAN for Java
 curl -s "https://get.sdkman.io" | bash
