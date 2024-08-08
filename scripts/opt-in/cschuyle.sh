@@ -28,6 +28,7 @@ brew install cpanm
 brew install csvkit
 brew install curl
 brew install direnv
+brew install dos2unix
 brew install findutils # gfind etc
 # brew install firebase
 brew install gh
