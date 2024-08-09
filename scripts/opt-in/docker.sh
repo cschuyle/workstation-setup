@@ -1,9 +1,10 @@
 # Don't stop if docker fails
 set +e
 
-# Docker
-brew install --cask docker
-echo "To get docker command-line tools, run the docker application"
+# Look in opt-in/cschuyle.sh for explanation:
+# # Docker
+# brew install --cask docker
+# echo "To get docker command-line tools, run the docker application"
 
 # Docker Zsh Completion
 # Reference https://docs.docker.com/docker-for-mac/

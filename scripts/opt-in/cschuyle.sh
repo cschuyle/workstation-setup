@@ -106,6 +106,11 @@ git config --global user.email carl@dragnon.com
 git config --global branch.autoSetupRebase always
 git config --global pull.rebase true
 
+## Experiment: Don't use the cask docker (which does docker desktop) - use Colima instead - more lightweight and sometimes more compatible (on Apple M architecture).
+brew install colima
+brew install docker
+colima start --memory 8 --arch x86_64
+
 echo <<EOF
 ##################################################
 
@@ -236,3 +241,8 @@ Manual configurations:
     - Variable bit rate
 ##################################################
 EOF
+
+
+## WORK STUFF
+
+# git config --global url."ssh://git@bitbucket.oci.oraclecorp.com:7999/".insteadof bb:/
