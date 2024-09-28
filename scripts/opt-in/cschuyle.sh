@@ -229,5 +229,10 @@ Manual configurations:
   - Go to Synology Downloads, select NAS versiopn and then Desktop Utilities.
     - Latest version for my current NAS: https://www.synology.com/en-us/support/download/DS1019+?version=7.2#utilities
 
+- Music
+  - Settings / Files / Import Settings
+  - MP3, Custom 
+    - 320 kbps (highest)
+    - Variable bit rate
 ##################################################
 EOF
