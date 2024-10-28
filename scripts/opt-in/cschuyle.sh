@@ -7,22 +7,21 @@ brew install --cask 1password
 brew install --cask arc
 brew install --cask brave-browser
 brew install --cask discord
-# Divvy chjarges $. Using Rectangle.
-# brew install --cask divvy
+# Divvy charges $. Using Rectangle.
+brew install --cask divvy
 brew install --cask nordvpn
 brew install --cask omnidb
 brew install --cask roam-research
 brew install --cask spotify
 brew install --cask vlc
-# brew install --cask vscodium
-# brew install amz
+#brew install --cask vscodium
+#brew install amz
 brew install automake
 brew install awscli
 brew install bcrypt
 brew install brimdata/tap/zq
 brew install clojure
 brew install clojure/tools/clojure
-brew install leiningen
 brew install coreutils
 brew install cpanm
 brew install csvkit
@@ -30,21 +29,21 @@ brew install curl
 brew install direnv
 brew install dos2unix
 brew install findutils # gfind etc
-# brew install firebase
+#brew install firebase
+brew install gawk
 brew install gh
 brew install git
-brew tap gdubw/gng && brew install gng
 brew install gnu-sed # gsed
 brew install gnu-tar # gtar
 brew install gradle
-brew install homebrew/cask/handbrake
-brew tap heroku/brew && brew install heroku
 brew install homebrew/cask/emacs
+brew install homebrew/cask/handbrake
 brew install httpie
 brew install imagemagick
 brew install jq
 brew install julia
 brew install kubernetes-cli
+brew install leiningen
 brew install libdvdcss
 brew install libidn2
 brew install libpq
@@ -57,13 +56,13 @@ brew install node
 brew install nushell
 brew install openssl
 brew install pdfgrep
-# brew install pdftk
-# brew install pdftk-java
+#brew install pdftk
+#brew install pdftk-java
 brew install perl
 brew install pkgxdev/made/pkgx
 brew install podman
 brew install postgresql
-# brew install psql
+#brew install psql
 brew install pup
 brew install python
 brew install readline
@@ -73,6 +72,8 @@ brew install s3cmd
 brew install sqlite3
 brew install the_silver_searcher
 brew install thefuck
+brew install tmux
+brew install tmuxinator
 brew install tre # for agrep. https://github.com/laurikari/tre
 brew install tree
 brew install vlc
@@ -87,6 +88,8 @@ brew install yarn
 brew install zlib
 brew install zq
 brew install zsh
+brew tap gdubw/gng && brew install gng
+brew tap heroku/brew && brew install heroku
 
 # OOOOH this looks nifty - Amber, it compiles to bash!
 curl -s "https://raw.githubusercontent.com/Ph0enixKM/AmberNative/master/setup/install.sh" | bash
