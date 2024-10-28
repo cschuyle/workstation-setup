@@ -48,11 +48,14 @@ brew install libdvdcss
 brew install libidn2
 brew install libpq
 brew install link-grammar
+brew install lua
 brew install maven
 brew install meld
 brew install mk-configure
 brew install mkvtools
+brew install ngs
 brew install node
+brew install nim
 brew install nushell
 brew install openssl
 brew install pdfgrep
@@ -62,6 +65,7 @@ brew install perl
 brew install pkgxdev/made/pkgx
 brew install podman
 brew install postgresql
+brew install powershell/tap/powershell
 #brew install psql
 brew install pup
 brew install python
@@ -70,6 +74,7 @@ brew install rename
 brew install ruby
 brew install s3cmd
 brew install sqlite3
+brew install tcl
 brew install the_silver_searcher
 brew install thefuck
 brew install tmux
