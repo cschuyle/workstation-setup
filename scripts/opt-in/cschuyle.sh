@@ -69,6 +69,7 @@ brew install powershell/tap/powershell
 #brew install psql
 brew install pup
 brew install python
+brew install rar
 brew install readline
 brew install rename
 brew install ruby
@@ -184,6 +185,8 @@ Manual configurations:
   - Handle DVDs and CDs
     - Ignore when insert DVD
     - Show eject in menu bar
+  - Clock - show 24H time
+  - Battery - show percentage in menu bar
     
   - Keyboard Shortcuts / Services / Text / Search Man Page index in Terminal 
     - DEACTIVATE
