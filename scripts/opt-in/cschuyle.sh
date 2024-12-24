@@ -126,7 +126,7 @@ Manual installs:
 
 - Etcher (if you need to make ISO USBs)
 
-- tinyMediaManager (mnage video colections)
+- tinyMediaManager (manage video collections)
 
 - Install dev tools. If you didn't already during the chicken-and-egg phase, try to run git, 
   and watch it tell you you need to install dev tools.
