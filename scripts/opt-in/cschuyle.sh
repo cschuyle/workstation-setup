@@ -122,10 +122,20 @@ colima start --memory 8 --arch x86_64
 echo <<EOF
 ##################################################
 
-Manual actions:
+Manual installs:
+
+- Etcher (if you need to make ISO USBs)
+
+- tinyMediaManager (mnage video colections)
 
 - Install dev tools. If you didn't already during the chicken-and-egg phase, try to run git, 
   and watch it tell you you need to install dev tools.
+
+- ProtonVPN
+
+- qBitTorrent
+
+Manual actions:
 
 - git hack to work around errors like `error ...zeroPaddedFilemode: contains zero-padded file modes`
   - From https://github.com/scikit-learn/scikit-learn/issues/19979
