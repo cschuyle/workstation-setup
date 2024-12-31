@@ -189,7 +189,11 @@ Manual configurations:
           - Set API token (https://pinboard.in / password / API Token)
 
   - Arc: Settings / Links / Open Little Arc when I press atl-cmd-N in any app - DISABLE
-  
+
+  - Handbrake:
+    - Exclude nfo files
+    - Subtitles and Audio - any, all, save new profile as default.
+    
 - System Settings 
   - Keyboard speed max
   - Handle DVDs and CDs
