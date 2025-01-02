@@ -34,16 +34,20 @@ else
     # Note: Homebrew needs to be set up first
     source ${MY_DIR}/scripts/common/homebrew.sh
 
-    # Install everything else
-    source ${MY_DIR}/scripts/common/oh-my-zsh.sh
-    source ${MY_DIR}/scripts/common/editors.sh
-    source ${MY_DIR}/scripts/common/git.sh
-    source ${MY_DIR}/scripts/common/git-aliases.sh
-    source ${MY_DIR}/scripts/common/applications-common.sh
-    source ${MY_DIR}/scripts/common/developer-utilities.sh
-    source ${MY_DIR}/scripts/common/unix.sh
-    source ${MY_DIR}/scripts/common/configuration-osx.sh
-fi
+# Note: Homebrew needs to be set up first
+source ${MY_DIR}/scripts/common/homebrew.sh
+source ${MY_DIR}/scripts/common/configuration-bash.sh
+
+# Place any applications that require the user to type in their password here
+brew cask install github
+brew cask install zoomus
+
+source ${MY_DIR}/scripts/common/git.sh
+source ${MY_DIR}/scripts/common/git-aliases.sh
+source ${MY_DIR}/scripts/common/applications-common.sh
+source ${MY_DIR}/scripts/common/unix.sh
+source ${MY_DIR}/scripts/common/configuration-osx.sh
+source ${MY_DIR}/scripts/common/configurations.sh
 
 # For each command line argument, try executing the corresponding script in opt-in/
 for var in "$@"

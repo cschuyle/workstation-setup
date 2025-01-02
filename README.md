@@ -42,8 +42,18 @@ mkdir -p ~/workspace &&
 ## Using this tool
 Within `~/workspace/workstation-setup`, run the following:
 
-```shell
-./setup.sh [list of optional configurations]
+```sh
+# For Labs developers (remove unnecessary languages when running command)
+./setup.sh java ruby node golang python c docker
+
+# For CloudFoundry developers
+./setup.sh c golang java docker cloud-foundry
+
+# For Data developers
+./setup.sh c golang java docker
+
+# For .net
+./setup.sh dotnet
 ```
 
 Examples:
