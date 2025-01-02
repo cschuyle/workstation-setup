@@ -103,11 +103,32 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#alias ll='ls -ltr'
+if command -v git > /dev/null ; then alias gs='git status'; fi
+alias ll='ls -ltr'
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+# Any local setups
+[[ -f "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
 
 # Variation on jbergantine prompt
 export PROMPT='%{$fg_bold[yellow]%}%D{%b %d}%{$fg_bold[white]%}·%{$fg_bold[green]%}%D{%H:%M:%S} %{$fg[cyan]%}%c %{$fg_bold[white]%}$(git_prompt_info)%{$fg_bold[white]%} % %{$fg_bold[red]%}➜ %{$reset_color%}'
+
+# A sane IntelliJ alias
+if [[ -x '/Applications/IntelliJ IDEA.app/Contents/MacOS/idea' ]]; then
+  idea () {
+    '/Applications/IntelliJ IDEA.app/Contents/MacOS/idea' $* &> "$HOME/.IntelliJ-Idea.log" &|
+  }
+fi
+
+# Local commands
+[[ -d "$HOME/bin" ]] && export PATH="$PATH:$HOME/bin"
+
+# Useful:
+# To set stuff in Mac keychain (`security` command), do this: 
+# security add-generic-password -a $USER -s <NAME> -w <PASSWORD>
+# Then in this script, make an alias or something like this:
+
+alias copy-secret-to-clipboard="security find-generic-password -a $USER -s <NAME> -w | tr -d '\n' | pbcopy"
+
+# SUPPOSEDLY THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
