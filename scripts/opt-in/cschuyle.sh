@@ -155,6 +155,11 @@ Manual actions:
 
 - From this repo (workstation-setup), copy cschuyle.zshrc to ~/.zshrc
 
+- Add upstream remote for this repe (for forked-from repo):
+```
+git remote add upstream https://github.com/pivotal/workstation-setup.git
+```
+
 - App Store
   - Amphetamine
   - 1Password for Safari
