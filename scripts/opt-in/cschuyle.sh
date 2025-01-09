@@ -131,8 +131,6 @@ Manual installs:
 - Install dev tools. If you didn't already during the chicken-and-egg phase, try to run git, 
   and watch it tell you you need to install dev tools.
 
-- ProtonVPN
-
 - qBitTorrent
 
 Manual actions:
@@ -145,17 +143,16 @@ Manual actions:
   git config --global receive.fsckobjects false
   ```
 
-- Install Oh-My-Zsh
-  - Clone https://github.com/cschuyle/ohmyzsh and move it to ~/.oh-my-zsh
+- Install Oh-My-Zsh (this repo)
+  - Clone https://github.com/cschuyle/ohmyzsh and rename it to ~/.ohmyzsh
   - `git remote add upstream https://github.com/ohmyzsh/ohmyzsh.git`
-  - Add the required stuff to plugins in .zshrc:
-  ```
-  plugins=(git sdk direnv)
-  ```
+  - Review cschuyle.zshrc and copy to .zshrc if you want.
+  - Make sure the required stuff to plugins in .zshrc:
+    ```
+    plugins=(git sdk direnv)
+    ```
 
-- From this repo (workstation-setup), copy cschuyle.zshrc to ~/.zshrc
-
-- Add upstream remote for this repe (for forked-from repo):
+- Add upstream remote for this repo (for forked-from repo):
 ```
 git remote add upstream https://github.com/pivotal/workstation-setup.git
 ```
@@ -163,8 +160,10 @@ git remote add upstream https://github.com/pivotal/workstation-setup.git
 - App Store
   - Amphetamine
   - 1Password for Safari
+  - Rectangle
+  - ProtonVPN
 
-- Check if Spotify brew cash is up to date with Spotify app
+- Check if Spotify homebrew is up to date with Spotify app
 
 Manual configurations:
 
@@ -253,12 +252,6 @@ Manual configurations:
 - Slack
   - Hummus
 
-- Review cschuyle.zshrc and copy to .zshrc.
-  - Make sure the required stuff to plugins in .zshrc:
-    ```
-    plugins=(git sdk direnv)
-    ```
-
 - Synology Assistant
   - Go to Synology Downloads, select NAS versiopn and then Desktop Utilities.
     - Latest version for my current NAS: https://www.synology.com/en-us/support/download/DS1019+?version=7.2#utilities
@@ -268,6 +261,12 @@ Manual configurations:
   - MP3, Custom 
     - 320 kbps (highest)
     - Variable bit rate
+
+- Finder show hidden files always
+  
+  defaults write com.apple.finder "AppleShowAllFiles" -bool "false"
+  killall Finder
+  
 ##################################################
 EOF
 
