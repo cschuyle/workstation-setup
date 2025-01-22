@@ -230,6 +230,10 @@ Manual configurations:
     - Remove Recents
   - Advanced / Show all filename extensions
 
+- System Settings | Privacy & Security | Local Network
+  - Allow things like iTerm, IntelliJ, browsers ...
+    (otherwise you won't be able to connect to Synology etc)
+
 - VS Code Settings
   - Auto save on focus change
 
